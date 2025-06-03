@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carmen Maria | Prosjekter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body
+  class="flex flex-col min-h-screen bg-gradient-to-tr from-blue-100 via-purple-100 to-pink-100 font-inter text-slate-800"
+>
+  <nav
+    class="flex justify-between items-center p-6 backdrop-blur-md bg-white/50 fixed top-0 w-full z-50 shadow"
+  >
+    <h1 class="text-2xl font-extrabold">
+      Carmen<span class="text-blue-500">.</span>
+    </h1>
+    <ul class="flex space-x-6 font-semibold text-sm">
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="prosjekter.html" class="text-blue-600">Prosjekter</a></li>
+      <li><a href="frivillig.html">Frivillig</a></li>
+      <li><a href="jobberfaring.html">Jobb</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <main class="flex-grow pt-36 px-6 max-w-5xl mx-auto space-y-12">
+    <h2 class="text-4xl font-bold mb-8 text-center">Prosjektene mine 🚀</h2>
+
+    <!-- Store prosjekter i store bokser -->
+    <div class="space-y-8 max-w-4xl mx-auto">
+      <div
+        class="glass-card p-8 rounded-lg bg-white/40 backdrop-blur-md shadow-lg"
+      >
+        <h3 class="text-2xl font-bold mb-3">
+          Intune skolemiljø med elever og lærere
+        </h3>
+        <p class="text-base opacity-90 leading-relaxed">
+          Jeg har laget og testet et Intune skolemiljø for både grunnskole og
+          videregående elever og lærere. Testet løsningen på flere virtuelle og
+          ekte enheter for å sikre stabilitet og funksjonalitet.
+        </p>
+      </div>
+
+      <div
+        class="glass-card p-8 rounded-lg bg-white/40 backdrop-blur-md shadow-lg"
+      >
+        <h3 class="text-2xl font-bold mb-3">Personlig Homelab</h3>
+        <p class="text-base opacity-90 leading-relaxed">
+          Bygget en personlig homelab hvor jeg satte opp en server med dashboard
+          og flere applikasjoner som jeg selv har konfigurert og vedlikeholder.
+        </p>
+      </div>
+    </div>
+
+    <!-- Små prosjekter med forbedret boks -->
+    <section>
+      <h3 class="text-xl font-bold mb-6 text-center">Småprosjekter</h3>
+      <div
+        class="glass-card p-8 rounded-lg bg-white/50 backdrop-blur-md max-w-3xl mx-auto shadow-md"
+      >
+        <p class="mb-6 text-center text-sm opacity-80 max-w-xl mx-auto">
+          I tillegg har jeg jobbet med flere spennende mindre prosjekter som har
+          gitt meg bred erfaring innen flere områder av IT og design:
+        </p>
+        <ul
+          class="list-disc list-inside text-base opacity-90 space-y-4"
+          style="line-height: 1.7;"
+        >
+          <li>Oppsett og konfigurering av ulike applikasjoner og verktøy</li>
+          <li>Utvikling av enkle og brukervennlige nettsider</li>
+          <li>Design og layout av plakater, flyers og digitale materialer</li>
+          <li>Automatisering av rutineoppgaver via skripting</li>
+          <li>Feilsøking og problemløsning i nettverksmiljøer</li>
+          <li>Brukeropplæring og dokumentasjon</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ferdigheter -->
+    <section>
+      <h3 class="text-xl font-bold mb-6 text-center">Ferdigheter og nivåer</h3>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
+      >
+        <!-- Ferdighetskort med progress bar -->
+        <div
+          class="glass-card p-6 rounded-md bg-white/40 backdrop-blur-md shadow-sm"
+        >
+          <h4 class="font-semibold text-lg mb-3 text-center">Windows Server</h4>
+          <div class="w-full bg-blue-200 rounded-full h-4">
+            <div
+              class="bg-blue-600 h-4 rounded-full"
+              style="width: 75%;"
+              aria-label="Windows Server ferdighetsnivå"
+            ></div>
+          </div>
+        </div>
+
+        <div
+          class="glass-card p-6 rounded-md bg-white/40 backdrop-blur-md shadow-sm"
+        >
+          <h4 class="font-semibold text-lg mb-3 text-center">Microsoft Intune</h4>
+          <div class="w-full bg-blue-200 rounded-full h-4">
+            <div
+              class="bg-blue-600 h-4 rounded-full"
+              style="width: 75%;"
+              aria-label="Microsoft Intune ferdighetsnivå"
+            ></div>
+          </div>
+        </div>
+
+        <div
+          class="glass-card p-6 rounded-md bg-white/40 backdrop-blur-md shadow-sm"
+        >
+          <h4 class="font-semibold text-lg mb-3 text-center">Virtuelle maskiner</h4>
+          <div class="w-full bg-blue-200 rounded-full h-4">
+            <div
+              class="bg-blue-600 h-4 rounded-full"
+              style="width: 95%;"
+              aria-label="Virtuelle maskiner ferdighetsnivå"
+            ></div>
+          </div>
+        </div>
+
+        <div
+          class="glass-card p-6 rounded-md bg-white/40 backdrop-blur-md shadow-sm"
+        >
+          <h4 class="font-semibold text-lg mb-3 text-center">Design</h4>
+          <div class="w-full bg-blue-200 rounded-full h-4">
+            <div
+              class="bg-blue-600 h-4 rounded-full"
+              style="width: 70%;"
+              aria-label="Design ferdighetsnivå"
+            ></div>
+          </div>
+        </div>
+
+        <div
+          class="glass-card p-6 rounded-md bg-white/40 backdrop-blur-md shadow-sm"
+        >
+          <h4 class="font-semibold text-lg mb-3 text-center">HTML & CSS</h4>
+          <div class="w-full bg-blue-200 rounded-full h-4">
+            <div
+              class="bg-blue-600 h-4 rounded-full"
+              style="width: 70%;"
+              aria-label="HTML & CSS ferdighetsnivå"
+            ></div>
+          </div>
+        </div>
+
+        <div
+          class="glass-card p-6 rounded-md bg-white/40 backdrop-blur-md shadow-sm"
+        >
+          <h4 class="font-semibold text-lg mb-3 text-center">
+            Serverdrift & nettverk
+          </h4>
+          <div class="w-full bg-blue-200 rounded-full h-4">
+            <div
+              class="bg-blue-600 h-4 rounded-full"
+              style="width: 75%;"
+              aria-label="Serverdrift & nettverk ferdighetsnivå"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-xs opacity-70 p-6">
+    &copy; 2025 Carmen Maria Kleijnen.
+  </footer>
+</body>
+</html>
