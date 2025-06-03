@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Work Experience | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body
+  class="bg-gradient-to-tr from-blue-100 via-purple-100 to-pink-100 min-h-screen font-inter text-slate-800 flex flex-col"
+>
+
+  <!-- Navbar -->
+  <nav
+    class="flex justify-between items-center p-6 backdrop-blur-md bg-white/50 fixed top-0 w-full z-50 shadow"
+  >
+    <h1 class="text-2xl font-extrabold">
+      Jane Doe<span class="text-blue-500">.</span>
+    </h1>
+    <ul class="flex space-x-6 font-semibold text-sm">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="volunteering.html">Volunteering</a></li>
+      <li><a href="work.html" class="text-blue-600">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow pt-36 px-6 max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold mb-10 text-center">Work Experience 💼</h2>
+
+    <div class="space-y-8 mb-16">
+      <div
+        class="glass-card p-6 rounded-lg shadow-lg bg-white/40 backdrop-blur-md"
+      >
+        <div class="flex justify-between items-center flex-wrap gap-3">
+          <h3 class="text-xl font-bold mb-2">🛒 On-call Assistant, ShopEasy</h3>
+          <span class="flex flex-col items-end">
+            <span
+              class="text-xl font-bold"
+              data-start="2024-04"
+              data-end="2025-02"
+              >Apr 2024 – Feb 2025</span
+            >
+            <span class="text-xs text-slate-600 duration"></span>
+          </span>
+        </div>
+        <p class="text-sm opacity-90">
+          Organized store layout, checked in and out customers renting stalls,
+          and handled sales transactions. Gained experience in customer service
+          and efficiency.
+        </p>
+      </div>
+
+      <div
+        class="glass-card p-6 rounded-lg shadow-lg bg-white/40 backdrop-blur-md"
+      >
+        <div class="flex justify-between items-center flex-wrap gap-3">
+          <h3 class="text-xl font-bold mb-2">🌞 Summer Job, Red Cross Norway</h3>
+          <span class="flex flex-col items-end">
+            <span
+              class="text-xl font-bold"
+              data-start="2024-06"
+              data-end="2024-08"
+              >Jun 2024 – Aug 2024</span
+            >
+            <span class="text-xs text-slate-600 duration"></span>
+          </span>
+        </div>
+        <p class="text-sm opacity-90">
+          Prepared and led outdoor activity days for youth. Strengthened
+          communication and organizational skills.
+        </p>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section>
+      <h3 class="text-3xl font-bold mb-6 text-center">
+        Skills and Competencies 🚀
+      </h3>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-xl mx-auto text-center"
+      >
+        <div
+          class="skill-card p-4 bg-white/50 rounded-lg shadow-md backdrop-blur-md hover:bg-blue-100 transition"
+        >
+          <div class="text-4xl mb-2">⚡</div>
+          <h4 class="font-semibold mb-1">Efficiency</h4>
+          <p class="text-xs opacity-80">Fast and structured work execution.</p>
+        </div>
+
+        <div
+          class="skill-card p-4 bg-white/50 rounded-lg shadow-md backdrop-blur-md hover:bg-purple-100 transition"
+        >
+          <div class="text-4xl mb-2">💬</div>
+          <h4 class="font-semibold mb-1">Communication</h4>
+          <p class="text-xs opacity-80">
+            Clear and empathetic communication, both verbal and written.
+          </p>
+        </div>
+
+        <div
+          class="skill-card p-4 bg-white/50 rounded-lg shadow-md backdrop-blur-md hover:bg-pink-100 transition"
+        >
+          <div class="text-4xl mb-2">🤝</div>
+          <h4 class="font-semibold mb-1">Customer Service</h4>
+          <p class="text-xs opacity-80">
+            Positive attitude and service-minded in customer interactions.
+          </p>
+        </div>
+
+        <div
+          class="skill-card p-4 bg-white/50 rounded-lg shadow-md backdrop-blur-md hover:bg-blue-100 transition"
+        >
+          <div class="text-4xl mb-2">📋</div>
+          <h4 class="font-semibold mb-1">Organization</h4>
+          <p class="text-xs opacity-80">Planning and coordinating tasks and events.</p>
+        </div>
+
+        <div
+          class="skill-card p-4 bg-white/50 rounded-lg shadow-md backdrop-blur-md hover:bg-purple-100 transition"
+        >
+          <div class="text-4xl mb-2">🧑‍🤝‍🧑</div>
+          <h4 class="font-semibold mb-1">Leadership</h4>
+          <p class="text-xs opacity-80">
+            Responsibility and initiative in teamwork and events.
+          </p>
+        </div>
+
+        <div
+          class="skill-card p-4 bg-white/50 rounded-lg shadow-md backdrop-blur-md hover:bg-pink-100 transition"
+        >
+          <div class="text-4xl mb-2">🎯</div>
+          <h4 class="font-semibold mb-1">Problem Solving</h4>
+          <p class="text-xs opacity-80">
+            Creative thinking to find solutions in various situations.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-xs opacity-70 pb-6 pt-6">
+    &copy; 2024 Jane Doe.
+  </footer>
+
+  <script>
+    // Dynamic duration calculation for spans with data-start/data-end
+    document.querySelectorAll('[data-start]').forEach(function (el) {
+      const start = el.getAttribute('data-start');
+      const end = el.getAttribute('data-end');
+      const durationSpan = el.parentElement.querySelector('.duration');
+      if (!durationSpan) return;
+
+      // Parse start
+      const [startYear, startMonth] = start.split('-').map(Number);
+      const startDate = new Date(startYear, (startMonth || 1) - 1);
+
+      // Parse end
+      let endDate;
+      if (end === 'now') {
+        const now = new Date();
+        endDate = new Date(now.getFullYear(), now.getMonth());
+      } else {
+        const [endYear, endMonth] = end.split('-').map(Number);
+        endDate = new Date(endYear, (endMonth || 1) - 1);
+      }
+
+      // Calculate months and years
+      let months =
+        (endDate.getFullYear() - startDate.getFullYear()) * 12 +
+        (endDate.getMonth() - startDate.getMonth()) +
+        1;
+      let years = Math.floor(months / 12);
+      let remMonths = months % 12;
+
+      let text = '';
+      if (years > 0) text += years + (years === 1 ? ' year' : ' years');
+      if (remMonths > 0) {
+        if (text) text += ' ';
+        text += remMonths + (remMonths === 1 ? ' month' : ' months');
+      }
+      if (!text) text = 'Less than 1 month';
+
+      durationSpan.textContent = text;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Volunteer Work</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gradient-to-tr from-blue-100 via-purple-100 to-pink-100 min-h-screen font-inter text-slate-800 flex flex-col">
+
+  <nav
+    class="flex justify-between items-center p-6 backdrop-blur-md bg-white/50 fixed top-0 w-full z-50 shadow"
+  >
+    <h1 class="text-2xl font-extrabold">
+      Jane Doe<span class="text-blue-500">.</span>
+    </h1>
+    <ul class="flex space-x-6 font-semibold text-sm">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="volunteer.html" class="text-blue-600">Volunteer</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="pt-36 px-6 max-w-4xl mx-auto mb-12 flex-grow">
+    <h2 class="text-4xl font-bold mb-8 text-center">Volunteer Work 🤝</h2>
+
+    <div class="space-y-6">
+      <div class="glass-card">
+        <div class="flex justify-between items-center flex-wrap gap-3">
+          <h3 class="text-xl font-bold mb-0">Deputy Coordinator, Community Youth Group</h3>
+          <span class="flex flex-col items-end">
+            <span class="text-xl font-bold mb-0" data-start="2023-05" data-end="now">May 2023 – Present</span>
+            <span class="text-xs text-slate-600 duration"></span>
+          </span>
+        </div>
+        <p class="mt-2 text-sm opacity-80">
+          Assisting in organizing youth programs and supporting community initiatives.
+        </p>
+      </div>
+
+      <div class="glass-card">
+        <div class="flex justify-between items-center flex-wrap gap-3">
+          <h3 class="text-xl font-bold mb-0">Member, Local Volunteer Council</h3>
+          <span class="flex flex-col items-end">
+            <span class="text-xl font-bold mb-0" data-start="2022-01" data-end="2023-04">Jan 2022 – Apr 2023</span>
+            <span class="text-xs text-slate-600 duration"></span>
+          </span>
+        </div>
+        <p class="mt-2 text-sm opacity-80">
+          Participated in planning and advising on community volunteer activities.
+        </p>
+      </div>
+
+      <div class="glass-card">
+        <div class="flex justify-between items-center flex-wrap gap-3">
+          <h3 class="text-xl font-bold mb-0">Activity Leader, Youth Engagement Program</h3>
+          <span class="flex flex-col items-end">
+            <span class="text-xl font-bold mb-0" data-start="2024-02" data-end="now">Feb 2024 – Present</span>
+            <span class="text-xs text-slate-600 duration"></span>
+          </span>
+        </div>
+        <p class="mt-2 text-sm opacity-80">
+          Leading and coordinating activities for young participants aged 14-19.
+        </p>
+      </div>
+
+      <div class="glass-card">
+        <div class="flex justify-between items-center flex-wrap gap-3">
+          <h3 class="text-xl font-bold mb-0">Volunteer, Helping Hands Initiative</h3>
+          <span class="flex flex-col items-end">
+            <span class="text-xl font-bold mb-0" data-start="2021-09" data-end="now">Sep 2021 – Present</span>
+            <span class="text-xs text-slate-600 duration"></span>
+          </span>
+        </div>
+        <p class="mt-2 text-sm opacity-80">
+          Providing support and assistance in various community projects and events.
+        </p>
+      </div>
+
+      <div class="glass-card">
+        <div class="flex justify-between items-center flex-wrap gap-3">
+          <h3 class="text-xl font-bold mb-0">Event Volunteer, Annual Children’s Festival</h3>
+          <span class="flex flex-col items-end">
+            <span class="text-xl font-bold mb-0" data-start="2019-04" data-end="2022-04">2019, 2020, 2021, 2022</span>
+            <span class="text-xs text-slate-600 duration"></span>
+          </span>
+        </div>
+        <p class="mt-2 text-sm opacity-80">
+          Assisted in organizing and running activities during the yearly children’s festival.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center text-xs opacity-70 pb-6 pt-6">
+    &copy; 2024 Jane Doe.
+  </footer>
+  <script>
+    // Calculate and display duration for volunteer periods
+    document.querySelectorAll('[data-start]').forEach(function(el) {
+      const start = el.getAttribute('data-start');
+      const end = el.getAttribute('data-end');
+      const durationSpan = el.parentElement.querySelector('.duration');
+      if (!durationSpan) return;
+
+      // Parse start
+      const [startYear, startMonth] = start.split('-').map(Number);
+      const startDate = new Date(startYear, (startMonth || 1) - 1);
+
+      // Parse end
+      let endDate;
+      if (end === 'now') {
+        const now = new Date();
+        endDate = new Date(now.getFullYear(), now.getMonth());
+      } else {
+        const [endYear, endMonth] = end.split('-').map(Number);
+        endDate = new Date(endYear, (endMonth || 1) - 1);
+      }
+
+      // Calculate months and years
+      let months = (endDate.getFullYear() - startDate.getFullYear()) * 12 + (endDate.getMonth() - startDate.getMonth()) + 1;
+      let years = Math.floor(months / 12);
+      let remMonths = months % 12;
+
+      let text = '';
+      if (years > 0) text += years + (years === 1 ? ' year' : ' years');
+      if (remMonths > 0) {
+        if (text) text += ' ';
+        text += remMonths + (remMonths === 1 ? ' month' : ' months');
+      }
+      if (!text) text = 'Less than 1 month';
+
+      durationSpan.textContent = text;
+    });
+  </script>
+</body>
+</html>
